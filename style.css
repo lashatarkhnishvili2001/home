@@ -1,8 +1,36 @@
 body {
-    background-color: #333;
+    background-image: linear-gradient(to right, #370523, #7c1c25, #a65700, #9ea100, #12eb4b);
 }
-h1{
+.container{
+     max-width: 1200px;
+     margin: auto;
+}
+
+.row{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.col h1 {
+    
     color: blue;
     font-size: 80px;
+}
+
+.col p{
+    font-size: 30px;
+    text-align: center;
+    color: aqua;
+}
+
+.inner{
+    background-image: radial-gradient(circle, #370523, #7c1c25, #a65700, #9ea100, #12eb4b);
+   width: 400px;
+  margin: auto;
+}
+
+.inner h1{
+  color: #12eb4b;
+  font-size: 60px;
 }
