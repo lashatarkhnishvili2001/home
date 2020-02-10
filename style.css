@@ -33,4 +33,5 @@ body {
 .inner h1{
   color: #12eb4b;
   font-size: 60px;
+  text-transform: capitalize;
 }
