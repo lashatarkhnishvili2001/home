@@ -1,37 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('reset.css');
+
 body {
-    background-image: linear-gradient(to right, #370523, #7c1c25, #a65700, #9ea100, #12eb4b);
-}
-.container{
-     max-width: 1200px;
-     margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.row{
-    text-align: center;
+.banner {
     display: flex;
-    flex-direction: column;
-}
-
-.col h1 {
-    
-    color: blue;
-    font-size: 80px;
-}
-
-.col p{
-    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10em 4em 6em 4em;
+    min-height: 70vh;
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
     text-align: center;
-    color: aqua;
+    overflow: hidden;
 }
 
-.inner{
-    background-image: radial-gradient(circle, #370523, #7c1c25, #a65700, #9ea100, #12eb4b);
-   width: 400px;
-  margin: auto;
+
+.banner h1 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: 'Passion One', cursive;
+    margin: 0;
+    line-height: 1.5;
 }
 
-.inner h1{
-  color: #12eb4b;
-  font-size: 60px;
-  text-transform: capitalize;
+.banner p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: 0 0 1.5em 0;
+}
+/* 
+.banner .more {
+   
+    background-image: url('http://icons.iconarchive.com/icons/icons8/ios7/32/Arrows-Down-4-icon.png');
+    background-position: center 1.35em;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    height: 5em;
+    text-indent: 5em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 5em;
+    z-index: 2;
+    margin: 0 auto 2em auto;
+} */
+
+
+
+
+
+
+
+
+
+.wrapper {
+   background-color: #202024;
+   padding: 4em 0 2em 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.row .col {
+    margin: 0 1em 2em 1em;
+    width: 30%;
+    
+}
+
+.col {
+    border-radius: 4px;
+    background: #2c2c32;
+    text-align: center; 
+}
+ 
+.col .image.fit {
+    margin: 0;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.image {
+    border-radius: 4px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.col .image img {
+    border-radius: 4px 4px 0 0; 
+}
+
+.col h3 {
+    font-size: 1.35em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+.col p {
+    color: #CACACC;
+    margin: 0 0 2em 0;
+}
+.wrapper .inner {
+    width: 90%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.col .inner {
+    box-sizing: border-box;
+    padding: 1.5em;
+    width: 100% !important;
+}
+
+.button.fit {
+    display: block;
+    margin: 0 0 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: hsl(174, 44%, 61%);
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 2.85em;
+    line-height: 2.95em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; 
+}
+
+
+
+.button.style2 {
+    background-color: #7f92cf;
+}
+
+.button.style3 {
+    background-color: #9d7ed0;
+}
+
+.button:hover{
+    background-color:  hsl(175, 38%, 70%);
+ }
+ .button.style2:hover {
+     background-color: #8EA1DE;
+ }
+ .button.style3:hover {
+     background-color: #AB8CDE;
+ }
+
+ @media (max-width: 1280px){
+    .col{
+       min-width: 40%;
+       margin: auto;
+    
+    }
+}
+
+@media (max-width: 735px){
+    .col{
+       min-width: 90%;
+       margin: auto;
+    }
 }
