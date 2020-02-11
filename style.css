@@ -6,12 +6,12 @@ html {
 
 .wrapper {
     background-image: linear-gradient(to right bottom, #18f00e, #00d5a3, #00b1ff, #0082ff, #1225eb);
-}q
+}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2.5em;
+    padding:  2.5em;
 }
 
 .row {
@@ -106,4 +106,8 @@ html {
 
 .text-box.tempus{
     background-color:  rgba(208, 23, 233, 0.445);
+}
+
+.text-box.veroeros{
+    background-color:  rgba(23, 44, 233, 0.349);
 }
