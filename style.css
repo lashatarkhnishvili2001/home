@@ -5,8 +5,8 @@ html {
 }
 
 .wrapper {
-
-}
+    background-image: linear-gradient(to right bottom, #18f00e, #00d5a3, #00b1ff, #0082ff, #1225eb);
+}q
 
 .container {
     max-width: 1200px;
