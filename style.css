@@ -1,138 +1,156 @@
 @import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-html {
-    font-size: 16px;
-}
-
-.wrapper {
-    background-image: linear-gradient(to right bottom, #18f00e, #00d5a3, #00b1ff, #0082ff, #1225eb);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:  2.5em;
+body{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .row {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    text-align: center;
 }
 
+.row:nth-child(even) .col.col-smal {
+    order: 1;
+}
+
+.graphiches {
+    display: block;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+}
 
 .col {
-    margin: 10px ;
     position: relative;
-    display: block;
-    margin-top: 5rem;
 }
 
-.image{
-    position: relative;
-    width: 100%;
-    transition: .5s;
+.col.col-smal {
+     width: 40%;
 }
 
-.image img {
-    display: block;
-    width: 100%;
+.col.col-big{
+     width: 60%;
 }
 
-.image::after {
-    content: '';
+.row .col .layer {
     position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
+    left:0;
+    top:0;
     width: 100%;
     height: 100%;
-    display: block;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyB2aWV3Qm94PScwIDAgMTAwIDEwMCcgcHJlc2VydmVBc3BlY3RSYXRpbz0nbm9uZSc+PHN0eWxlPmxpbmUgeyBzdHJva2Utd2lkdGg6IDAuMjVweDsgc3Ryb2tlOiAjZmZmZmZmOyB9PC9zdHlsZT48bGluZSB4MT0nMCcgeTE9JzAnIHgyPScxMDAnIHkyPScxMDAnIC8+PGxpbmUgeDE9JzEwMCcgeTE9JzAnIHgyPScwJyB5Mj0nMTAwJyAvPjwvc3ZnPg==");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.5;
-    z-index: 2;
-}
-
-
-.section-row__col {
-    position: relative;
-   
-}
-
-.text-box {
+    
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    position: absolute;
     box-sizing: border-box;
-    padding: 20px;
-    background-color: rgba(226, 83, 83, 0.5);
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    /* top: 0;
+    padding: 60px;
+}
+
+.layer .layer__box {
+    align-self: center;
+}
+.row .col .layer h1 {
+    font-size: 1.75em;
+    margin: 30px 0px;
+}
+
+.row .col .layer p span {
+    display: inline-block;
+    padding: 25px 0 25px 0;
+    position: relative;
+}
+
+.row .col .layer p span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
     left: 0;
-    width: 100%;
-    height: 100%; */
+    top: 0px;
+    width: 122%;
+    background-color: white;
 }
 
-.text-box__item {
-  text-align: center;
+.row .col .layer p {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin-top: 0;
+    text-transform: uppercase;
+    
+    
 }
 
 
-.text-box .text-box__description {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 1s, opacity 1s;
+.layer.aliquam{
+   background-color:  rgba(4, 199, 233, 0.473);
 }
 
-.text-box:hover .text-box__description {
-    max-height: 100%;
-    opacity: 1;
-}
+.layer.tempus{
+    background-color:  rgba(65, 4, 233, 0.459);
+ }
+ .layer.ipsum{
+    background-color:  rgba(233, 57, 4, 0.473);
+ }
 
-.text-box.lorem{
-    background-color:  rgba(99, 70, 226, 0.411);
-}
+ .layer.magna{
+    background-color:  rgba(233, 153, 4, 0.473);
+ }
+ .layer.consequat{
+    background-color:  rgba(55, 70, 201, 0.473);
+ }
+ .layer.etiam{
+    background-color:  rgba(4, 233, 80, 0.473);
+ }
 
-.text-box.feugiat{
-    background-color:  rgba(53, 223, 75, 0.445);
-}
+ .layer:hover {
+    background-color: transparent !important;
+ }
 
-.text-box.tempus{
-    background-color:  rgba(208, 23, 233, 0.445);
+ @media only screen and (max-width: 1660px){
+    .col.col-smal {
+        width: 40%;
+   }
+   .graphiches {
+    height: 47vh;
 }
+   .col.col-big{
+    width: 60%;
+    }
+    .graphiches {
+        height: 47vh;
+    }
+ }
 
-.text-box.veroeros{
-    background-color:  rgba(23, 44, 233, 0.349);
+ @media only screen and (max-width: 1200px){
+    .col.col-smal {
+        width: 50%;
+   }
+   .graphiches {
+    height: 40vh;
 }
+   .col.col-big{
+    width: 50%;
+    }
+    .graphiches {
+        height: 40vh;
+    }
+ }
 
-.container > .row > .col {
-    flex-grow: 1; /*? სიძუნწე*/
-    outline :5px solid red;
-    min-height: 100px;
-    border-radius: 5px;
-    transition: transform 1s;
-    outline-offset: 5px;
+ @media only screen and (max-width: 740px){
+    .col.col-smal {
+       width: 50%;
+   }
+   .graphiches {
+    height: 30vh;
 }
+    .col.col-big{
+        width: 50%;
+        
+    }
+    .graphiches {
+        height: 30vh;
+    }
+ }
 
-.container > .row > .col:nth-child(1):hover {
-    transform: rotate(90deg);
-}
 
-.container > .row > .col:nth-child(2):hover {
-    transform: scale(1.5,1.5);
-}
 
-.container > .row > .col:nth-child(3):hover {
-    transform: skew(30deg,30deg);
-}
-
-.container > .row > .col:nth-child(4):hover {
-    transform: translate(-30px,-30px);
-}
