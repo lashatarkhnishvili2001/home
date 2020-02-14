@@ -152,5 +152,19 @@ body{
     }
  }
 
-
+ @media only screen and (max-width: 600px){
+    .col.col-smal {
+       width: 100%;
+   }
+   .graphiches {
+    height: 45vh;
+}
+    .col.col-big{
+        width: 100%;
+        
+    }
+    .graphiches {
+        height: 45vh;
+    }
+ }
 
