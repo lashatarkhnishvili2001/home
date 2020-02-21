@@ -1,6 +1,14 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+.wrapper.section-wrap{
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
 body{
     color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
@@ -156,7 +164,7 @@ body{
 
 
 
-.section-row__col-1 h2 span:after {
+.row.section-row__col-1 h2 span:after {
     content: '';
     background-color: #ffffff;
     display: block;
@@ -165,10 +173,6 @@ body{
     width: 100%;
 }
 
-.section-wrap{
-    background-image: url(images/banner.jpg);
-
-}
 
 
 
