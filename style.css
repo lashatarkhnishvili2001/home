@@ -1,6 +1,11 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+body{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .wrapper.section-wrap{
     background-image: url('images/banner.jpg');
     background-repeat: no-repeat;
@@ -9,19 +14,95 @@
 }
 
 
-body{
-    color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 .row {
     display: flex; 
     flex-wrap: wrap;
 }
 
+
+.col-1 {
+    padding: 10em 0 10em 0;
+    margin: 0 auto;
+    max-width: 77em;
+    width: calc(100% - 6em);
+}
+
+
+.col-1 h2 {
+         font-size: 3.25em;
+         color:blue;
+
+}
+
+.col-1 .description p {
+    margin-top: 30px;
+    color: blue;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+ 
+.row.section-row__col {
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.row.section-row__col .col-2 h3 {
+    color: #ff0000;
+    font-size: 16px;
+    margin: auto;
+}
+
+.row.section-row__col .col-2{
+    margin: 10px;
+}
+
+.row.section-row__col .col-2 .column {
+   display: flex;
+}
+
+
+.row.section-row__col .col-2 strong{
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: #ffffff;
+    color: #242943;
+    display: inline-block;
+    line-height: 1.65em;
+    margin-right: 10px;
+    padding: 0 0.375em 0 0.375em;
+}
+
+
+.section-row__col .col-3 {
+    font-size: 27px;
+    margin: 5px 48px;
+}
+
+.row.section-row__col-1 h2 span:after {
+    content: '';
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    margin: 0.325em 0 0.5em 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 .row:nth-child(even) .col.col-smal {
     order: 1;
 }
+
+
+
 
 .graphiches {
     display: block;
@@ -115,63 +196,6 @@ body{
 
  
  
-
-.col-1 {
-    padding: 10em 0 10em 0;
-    margin: 0 auto;
-    max-width: 77em;
-    width: calc(100% - 6em);
-}
-
-
-.col-1 h2 {
-         font-size: 3.25em;
-         color:blue;
-
-}
-
-.col-1 .description p {
-    margin-top: 30px;
-    color: blue;
-    font-size: 0.7em;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-}
- 
-
-
-.section-row__col {
-    justify-content: flex-end;
-    height: 50px;
-    background-color: blue;
-}
-
-.section-row__col .col-2 h3 {
-    color: red;
-    font-size:30px;
-}
-
-.section-row__col .col-2{
-    margin: 0 0 0 35px;
-}
-
-.section-row__col .col-3 {
-    background-color: yellow;
-   
-
-}
-
-
-
-.row.section-row__col-1 h2 span:after {
-    content: '';
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    margin: 0.325em 0 0.5em 0;
-    width: 100%;
-}
 
 
 
