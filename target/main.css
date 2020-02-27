@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');/*?font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');/*? font-family: 'Open Sans Condensed', sans-serif;*/
+@import url('reset.css');
+
+body {
+    background-color: hsl(0, 0%, 16%);
+    color: hsl(120, 100%, 50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin:  auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav > li {
+    flex-grow: 1;
+    position: relative;
+}
+
+.main-nav > li:after {
+    position: absolute;
+    top:0;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: hsl(0, 0%, 16%);
+}
+
+.main-nav > li:last-child::after {
+    width: 0;
+    background-color: hsla(0, 0%, 16%,0%);
+}
+
+.main-nav > li > label,
+.main-nav > li > a {
+    color: hsla(0, 0%, 16%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    background-color: hsla(120, 100%, 50%, 100%);
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+}
+
+.main-nav > li > a:hover,
+.main-nav > li > label:hover {
+    background-color: hsla(0, 0%, 16%, 100%);
+    color: hsla(120, 100%, 50%, 100%);
+}
+
+.sub-nav {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%) rotate(360deg) scale(0);
+    transition: visibility 1s, opacity 1s, transform 1s;
+}
+
+input[type="checkbox"]:checked ~ .sub-nav,
+input[type="radio"]:checked ~ .sub-nav {
+    visibility: visible;
+    transform: translateY(0%) rotate(0deg) scale(1);
+    opacity: 1;
+}
+
+.sub-nav > li > a {
+    color: hsla(0, 0%, 16%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    background-color: hsla(120, 100%, 50%, 100%);
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
+.sub-nav > li > a:hover {
+    background-color: hsla(0, 0%, 16%, 100%);
+    color: hsla(120, 100%, 50%, 100%);
+}
+
+.container-content {
+    height: 90vh;
+    background-color: hsla(120, 100%, 50%, 10%);
+}

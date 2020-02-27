@@ -1,0 +1,136 @@
+@import url('reset.css');
+@import url('main.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    background-color: rgb(27, 26, 26);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 777;
+}
+
+.containerc {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 50px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+
+.wrapper .col:nth-child(1) a:hover {
+    color: rgba(255, 0, 0, 0.699);
+}
+
+.wrapper .col:nth-child(2) a:hover {
+    color: rgba(17, 255, 17, 0.76);
+}
+
+.wrapper .col:nth-child(3) a:hover {
+    color: rgba(0, 0, 126, 0.945);
+}
+
+.wrapper .col:nth-child(4) a:hover {
+    color: rgba(255, 251, 0, 0.884);
+    
+}
+
+
+.wrapper .col:nth-child(1) a {
+  background-color: rgba(255, 0, 0, 0.699);
+  color:rgba(117, 8, 0, 0.76);
+}
+
+.wrapper .col:nth-child(2) a {
+    background-color: rgba(2, 194, 2, 0.76);
+    color:rgba(2, 194, 82, 0.76);
+}
+
+.wrapper .col:nth-child(3) a {
+    background-color: rgba(0, 0, 255, 0.925);
+    color: rgb(1, 10, 49);
+}
+
+.wrapper .col:nth-child(4) a {
+    background-color: rgba(255, 251, 0, 0.884);
+    color:  rgba(117, 115, 0, 0.993);
+}
+
+.section {
+  height: 100vh;
+  padding-top: 150px;
+}
+
+.section-red {
+    background-color: rgba(255, 0, 0, 0.699);
+}
+.section-green {
+  background-color: rgba(2, 194, 2, 0.76);
+  
+}
+.section-blue {
+  background-color: rgba(0, 0, 255, 0.925);
+}
+.section-yellow {
+  background-color: rgba(255, 251, 0, 0.884);
+}
+
+
+.section-red:target ~ .wrapper a[href="#sec-red"]{
+  color:wheat;
+}
+
+.section-green:target ~ .wrapper a[href="#sec-green"]{
+  color:wheat;
+}
+
+.section-blue:target ~ .wrapper a[href="#sec-blue"]{
+  color:wheat;
+}
+
+.section-yellow:target ~ .wrapper a[href="#sec-yellow"]{
+  color:wheat;
+}
+
+
+.col{
+  transition: clip-path 1s;
+  clip-path: polygon(0% 20%, 60% 20%, 100% 20%, 100% 54%, 100% 79%, 100% 79%, 0% 80%);
+}
+
+.col:hover{
+  clip-path: polygon(0 0, 51% 0, 100% 0, 100% 54%, 100% 100%, 54% 100%, 0 100%);
+}
+
+.section-red:target ~ .wrapper .sec-red,
+.section-green:target ~ .wrapper .sec-green,
+.section-blue:target ~ .wrapper .sec-blue{
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.section-yellow:target ~ .wrapper .sec-yellow{
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+.col a {
+  transition: color 1s, text-shadow 1s 1s ;
+}
+
+.col .link-1:hover {
+  color: red;
+  text-shadow: 0 0 3px red, 0 0 6px red, 0 0 9px red;
+}
