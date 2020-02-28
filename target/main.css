@@ -8,7 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .container {
     max-width: 1200px;
     margin:  auto;
@@ -24,6 +23,7 @@ input[type="radio"] {
 }
 
 .main-nav > li {
+    text-align: center;
     flex-grow: 1;
     position: relative;
 }
@@ -97,4 +97,15 @@ input[type="radio"]:checked ~ .sub-nav {
 .container-content {
     height: 90vh;
     background-color: hsla(120, 100%, 50%, 10%);
+}
+
+.container .main-nav a  {
+    
+    transition: transform 1s;
+    transform: rotate(0);
+    text-align: center;
+}
+
+.container > .main-nav a:hover {
+    transform: rotate(90deg);
 }
