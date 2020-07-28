@@ -19,26 +19,7 @@
     justify-content:space-evenly;
 }
 
-.col.one{
-    box-shadow:  green 0px 0px 76px 38px ;
-    border: solid 3px yellow;
-    background-color: red;
-    color: red;
-}
 
-.col.two{
-    box-shadow:  green 0px 0px 76px 38px ;
-    border: solid 3px red;
-    background-color: yellow;
-    color: red;
-}
-
-.col.Three{
-    box-shadow:  green 0px 0px 76px 38px ;
-    border: solid 3px yellow;
-    background-color: red;
-    color: red;
-}
 
 .col .text{
     display: inline-block;
@@ -83,6 +64,8 @@
 @media  (max-width: 1000px) {
 
     .wrapper.phone{
+        border-radius: 100px;
+        background-color: cornflowerblue;
         width: 100%;
         transform: translateY(-250px);
     }        
@@ -99,4 +82,18 @@
     .wrapper.image {
         display: none;
     }
+}
+
+.animation{
+  color: black;
+  border-radius: 10px;
+  animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    0%   {background: rgb(255, 8, 0); }
+    25%  {background: rgb(179, 255, 0); }
+    50%  {background: rgb(0, 255, 21); }
+    75%  {background: rgb(0, 26, 255); }
+    100% {background: rgb(255, 0, 179); }
 }
