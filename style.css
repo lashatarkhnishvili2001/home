@@ -84,7 +84,7 @@
 
     .wrapper.phone{
         width: 100%;
-        transform: translateY(-390px);
+        transform: translateY(-250px);
     }        
     .row {
          display: flex;
